@@ -15,6 +15,7 @@ class DF:
 
     def set_data(self):
         df = pd.read_csv("dane.csv").iloc[:, [1, 2]]
+        df = pd.concat([df]*3, ignore_index=True)
         df.columns = ["Film", "rank"]
         df['rank'] = pd.to_numeric(df['rank'], errors='coerce')
         df = df[pd.notnull(df['rank'])]

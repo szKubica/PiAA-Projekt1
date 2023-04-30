@@ -42,7 +42,7 @@ def display():
 
 if __name__ == "__main__":
 
-    data_volumes = [10000, 50000, 100000, 200000, 300000, 400000]
+    data_volumes = [10000, 100000, 500000, 1000000, 1216098]
 
     data_set_list = []
 
